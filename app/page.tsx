@@ -14,7 +14,7 @@ const Page = () => {
     }
   }, [blobityInstance]);
   return (
-    <div>
+    <div >
       <Hero />
     </div>
   );
