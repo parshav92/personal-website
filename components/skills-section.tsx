@@ -2,13 +2,13 @@
 import React, { useState, useRef, useEffect } from 'react';
 
 const skills = [
-  { name: "MaterialUI", color: "bg-blue-500" },
-  { name: "Bulma", color: "bg-teal-500" },
+  { name: "Python", color: "bg-green-500" },
+  { name: "Java", color: "bg-teal-500" },
   { name: "Tailwind", color: "bg-blue-300" },
   { name: "Bootstrap", color: "bg-purple-500" },
-  { name: "SCSS", color: "bg-pink-500" },
+  { name: "Convex", color: "bg-orange-500" },
   { name: "jQuery", color: "bg-blue-400" },
-  { name: "GraphQL", color: "bg-pink-400" },
+  { name: "SQL", color: "bg-pink-400" },
   { name: "NextJS", color: "bg-red-500" },
   { name: "Node", color: "bg-green-600" },
   { name: "Firebase", color: "bg-yellow-500" },
@@ -18,6 +18,11 @@ const skills = [
   { name: "JavaScript", color: "bg-yellow-400" },
   { name: "Git", color: "bg-red-600" },
   { name: "GitHub", color: "bg-black" },
+  { name: "ReactJS", color: "bg-blue-600" },
+  { name: "UiDesign", color: "bg-purple-400" },
+  { name: "Web3", color: "bg-yellow-600" },
+  { name: "Webscraping", color: "bg-green-400" },
+  { name: "Solidity", color: "bg-blue-800" },
 ];
 
 const SkillItem: React.FC<{ skill: typeof skills[0] }> = ({ skill }) => (
@@ -76,6 +81,7 @@ const SkillsSection: React.FC = () => {
   return (
     // <section id="skills">
     <div className="w-full overflow-hidden py-12 relative space-y-12">
+      <h1 className="text-3xl font-bold text-center mb-6">My Skills</h1>
       <MarqueeRow skills={skills.slice(0, Math.ceil(skills.length / 2))} direction="normal" />
       <MarqueeRow skills={skills.slice(Math.ceil(skills.length / 2))} direction="reverse" />
     </div>
