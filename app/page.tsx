@@ -1,8 +1,9 @@
 "use client"
-import Hero from "@/components/Hero";
+import Hero from "@/components/hero";
 import useBlobity from "blobity/lib/react/useBlobity";
 import { initialBlobityOptions } from "./utils/blobityConfig";
 import { useEffect } from "react";
+import SkillsSection from "@/components/skills-section";
 
 const Page = () => {
   const blobityInstance = useBlobity(initialBlobityOptions);
@@ -16,6 +17,8 @@ const Page = () => {
   return (
     <div >
       <Hero />
+      <h1 className="text-3xl font-bold text-center mb-6">My Skills</h1>
+      <SkillsSection />
     </div>
   );
 };

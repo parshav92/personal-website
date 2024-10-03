@@ -5,6 +5,7 @@ import Head from 'next/head';
 const Hero: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-teal-50 via-lime-100 to-fuchsia-100 flex items-center justify-center px-4">
+      {/* items-stretch justify-center bg-[url('.//../public/hero.jpg')] bg-cover  bg-center */}
       <Head>
         <title>Parshav - </title>
         <meta name="description" content="Web Developer specializing in cybersecurity and Blockchain development" />
