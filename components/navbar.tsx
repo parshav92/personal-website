@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
-import { File } from "lucide-react";
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NavBar = () => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -26,7 +27,8 @@ const NavBar = () => {
         data-blobity-tooltip="View Resume"
         data-blobity-magnetic="false"
       >
-        <File
+        <FontAwesomeIcon
+          icon={faFilePdf}
           className="py-2 px-2 text-[16px] sm:px-4 md:py-1"
         />
       </Link>

@@ -9,7 +9,7 @@ const skills = [
   { name: "SCSS", color: "bg-pink-500" },
   { name: "jQuery", color: "bg-blue-400" },
   { name: "GraphQL", color: "bg-pink-400" },
-  { name: "NestJS", color: "bg-red-500" },
+  { name: "NextJS", color: "bg-red-500" },
   { name: "Node", color: "bg-green-600" },
   { name: "Firebase", color: "bg-yellow-500" },
   { name: "MongoDB", color: "bg-green-500" },
@@ -74,10 +74,12 @@ const MarqueeRow: React.FC<{ skills: typeof skills; direction: 'normal' | 'rever
 
 const SkillsSection: React.FC = () => {
   return (
+    // <section id="skills">
     <div className="w-full overflow-hidden py-12 relative space-y-12">
       <MarqueeRow skills={skills.slice(0, Math.ceil(skills.length / 2))} direction="normal" />
       <MarqueeRow skills={skills.slice(Math.ceil(skills.length / 2))} direction="reverse" />
     </div>
+    // </section>
   );
 };
 
