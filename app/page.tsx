@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import SkillsSection from "@/components/skills-section";
 import Project from "./project-section/project";
 import ConnectSection from "@/components/connect-section";
+import Footer from "@/components/footer";
 
 const Page = () => {
   const blobityInstance = useBlobity(initialBlobityOptions);
@@ -22,6 +23,7 @@ const Page = () => {
       <SkillsSection />
       <Project />
       <ConnectSection />
+      <Footer />
     </div>
   );
 };
