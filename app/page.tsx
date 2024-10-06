@@ -7,6 +7,7 @@ import SkillsSection from "@/components/skills-section";
 import Project from "./project-section/project";
 import ConnectSection from "@/components/connect-section";
 import Footer from "@/components/footer";
+import About from "./about-section/about";
 
 const Page = () => {
   const blobityInstance = useBlobity(initialBlobityOptions);
@@ -22,6 +23,7 @@ const Page = () => {
       <Hero />
       <SkillsSection />
       <Project />
+      <About />
       <ConnectSection />
       <Footer />
     </div>
