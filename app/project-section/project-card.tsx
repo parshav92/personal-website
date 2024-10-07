@@ -22,7 +22,7 @@ const ProjectCard = ({
     <motion.div
       style={
         {
-          backgroundColor: "#212531",
+          backgroundColor: "hsl(0,0%,15%)",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center center",
@@ -35,6 +35,8 @@ const ProjectCard = ({
     >
       <Image
         src={image}
+        width={1920}
+        height={1080}
         alt={name}
         className={`absolute -bottom-2 w-[70%] sm:w-[85%] md:w-[60%] lg:max-w-[55%] ${
           id % 2 === 0 ? "right-0" : "left-0"

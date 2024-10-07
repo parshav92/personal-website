@@ -5,7 +5,7 @@ export type ProjectProps = {
     technologies: string[];
     github: string;
     demo: string;
-    image?: string;
+    image: string;
     available: boolean;
     bgColor?: string;
   };
@@ -18,7 +18,7 @@ export type ProjectProps = {
       technologies: ["NextJS", "Convex", "Liveblocks"],
       github: "",
       demo: "",
-      image: "/_next/image?url=%2F..%2Fpublic%2Fprojects%2Fhsl.webp&w=1920&q=75",
+      image: "/test.png",
       available: true,
     },
     {
@@ -28,7 +28,7 @@ export type ProjectProps = {
       technologies: ["ReactJS", "UI Design", "NodeJS"],
       github: "",
       demo: "",
-      image: "/_next/image?url=%2F..%2Fpublic%2Fprojects%2Frags.webp&w=1920&q=75",
+      image: "/test.png",
       available: true,
     },
     {
@@ -39,7 +39,7 @@ export type ProjectProps = {
       github: "",
       demo: "",
       image:
-        "/_next/image?url=%2F..%2Fpublic%2Fprojects%2Fcrown.webp&w=1920&q=75",
+        "/test.png",
       available: true,
     },
     {
@@ -49,7 +49,7 @@ export type ProjectProps = {
       technologies: ["ReactJS", "UI Design", "Webscraping"],
       github: "",
       demo: "",
-      image: "/_next/image?url=%2F..%2Fpublic%2Fprojects%2Ftiti.webp&w=1920&q=75",
+      image: "/test.png",
       available: true,
     },
   ];
@@ -65,7 +65,7 @@ export type ProjectProps = {
       github: "",
       demo: "",
       bgColor: "#F9F9F9",
-      // image: "/_next/image?url=%2F..%2Fpublic%2Fprojects%2Fhsl.webp&w=1920&q=75",
+      image: "/test.png",
       available: true,
     }
   ];

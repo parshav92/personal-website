@@ -9,7 +9,7 @@ import AnimatedWords from '../app/animations/animated-words';
 const ConnectSection = () => {
   return (
     <motion.section
-      className="relative z-10 flex h-screen w-full items-center justify-center overflow-hidden bg-[#0e1016] bg-cover bg-center py-16"
+      className="relative z-10 flex h-screen w-full items-center justify-center overflow-hidden bg-cover bg-center py-16"
       id="contact"
       initial="initial"
       animate="animate"

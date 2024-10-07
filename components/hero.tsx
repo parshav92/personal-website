@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 const Hero: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-teal-50 via-lime-100 to-fuchsia-100 flex items-center justify-center px-4">
+    <div className="min-h-screen  bg-[url('.//../public/hero.jpg')] bg-cover  bg-center flex items-center justify-center px-4">
       {/* items-stretch justify-center bg-[url('.//../public/hero.jpg')] bg-cover  bg-center */}
       <Head>
         <title>Parshav - </title>
@@ -19,14 +19,14 @@ const Hero: React.FC = () => {
           </span>
         </div>
         
-        <h1 className=" text-black text-opacity-75 text-4xl md:text-6xl font-bold mb-4 ">
-          I&apos;m Parshav, Web Developer<br />and CS major based in 
+        <h1 className=" text-[#e4ded7] text-opacity-75 text-4xl md:text-6xl font-bold mb-4 !leading-snug">
+          I&apos;m Parshav, Web Developer <br /> and CS major based in 
           <span className='bg-black opacity-40 rounded-2xl mx-8 px-4'>
-            <span className=" bg-black opacity-40 rounded-2xl bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-pink/80 to-rose/20">Mumbai</ span>
+            <span className=" opacity-40 rounded-2xl bg-clip-text drop-shadow-2xl">Mumbai</ span>
           </span>
         </h1>
         
-        <p className="text-black text-opacity-75 text-lg mb-8 max-w-2xl mx-auto">
+        <p className="text-[#e4ded7] text-opacity-75 text-lg mb-8 max-w-2xl mx-auto">
           A dedicated Web Developer specializing in cybersecurity and Blockchain
           development, creating impactful and interactive user experiences
         </p>
