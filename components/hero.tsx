@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 const Hero: React.FC = () => {
   return (
-    <div className="min-h-screen  bg-[url('.//../public/hero.jpg')] bg-cover  bg-center flex items-center justify-center px-4">
+    <div className="min-h-screen flex items-center justify-center px-4 m-8 rounded-3xl hero-bg">
       {/* items-stretch justify-center bg-[url('.//../public/hero.jpg')] bg-cover  bg-center */}
       <Head>
         <title>Parshav - </title>
@@ -19,14 +19,14 @@ const Hero: React.FC = () => {
           </span>
         </div>
         
-        <h1 className=" text-[#e4ded7] text-opacity-75 text-4xl md:text-6xl font-bold mb-4 !leading-snug">
+        <h1 className=" text-white text-opacity-75 text-4xl md:text-6xl font-bold mb-4 !leading-snug">
           I&apos;m Parshav, Web Developer <br /> and CS major based in 
           <span className='bg-black opacity-40 rounded-2xl mx-8 px-4'>
             <span className=" opacity-40 rounded-2xl bg-clip-text drop-shadow-2xl">Mumbai</ span>
           </span>
         </h1>
         
-        <p className="text-[#e4ded7] text-opacity-75 text-lg mb-8 max-w-2xl mx-auto">
+        <p className="text-white text-opacity-75 text-lg mb-8 max-w-2xl mx-auto">
           A dedicated Web Developer specializing in cybersecurity and Blockchain
           development, creating impactful and interactive user experiences
         </p>
