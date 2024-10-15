@@ -19,14 +19,16 @@ const Page = () => {
     }
   }, [blobityInstance]);
   return (
-    <div >
-      <Hero />
-      <SkillsSection />
-      <Project />
-      <About />
-      <ConnectSection />
-      <Footer />
-    </div>
+    <>
+      <div >
+        <Hero />
+        <SkillsSection />
+        <About />
+        <Project />
+        <ConnectSection />
+        <Footer />
+      </div>
+    </>
   );
 };
 

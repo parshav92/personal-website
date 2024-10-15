@@ -14,7 +14,6 @@
     --circleColor: var(--light);
     --circleColor: var(--dark);
     backdrop-filter: blur(25px);
-    min-height: 100svh;
     background-image: 
       radial-gradient(circle at 50% 0%, var(--circleColor) 60%, transparent 85%),
       linear-gradient(to right, #624dce, #e0686c, #99579f);
