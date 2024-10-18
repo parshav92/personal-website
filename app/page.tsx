@@ -23,8 +23,8 @@ const Page = () => {
       <div >
         <Hero />
         <SkillsSection />
-        <About />
         <Project />
+        <About />
         <ConnectSection />
         <Footer />
       </div>
