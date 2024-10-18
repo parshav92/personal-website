@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .font-clash-display-semibold {
+    font-family: var(--font-clash-display-semibold), sans-serif;
   }
 }
 @layer base {
@@ -16,18 +20,13 @@
     backdrop-filter: blur(25px);
     background-image: 
       radial-gradient(circle at 50% 0%, var(--circleColor) 60%, transparent 85%),
-      linear-gradient(to right, #624dce, #e0686c, #99579f);
+      linear-gradient(to right, #624dce, #68b4e0, #250074);
     display: grid;
     place-items: center;
     position: relative;
     isolation: isolate;
   }
 }
-
-html, body {
-  overscroll-behavior: none;
-}
-
 /* body {
   overflow-y: hidden;
 } */

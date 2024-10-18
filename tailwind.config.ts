@@ -12,6 +12,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        'clash-display': 'var(--font-clash-display)',
+        'clash-display-semibold': 'var(--font-clash-display-semibold)',
+      },
     },
   },
 };

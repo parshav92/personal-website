@@ -18,7 +18,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="fixed top-10 left-0 right-0 z-50 my-0  mx-auto  flex w-[306px] items-center justify-center gap-1 rounded-lg bg- [#e4ded7] px-1 py-1 text- [#050101] text-white bg-[hsl(0,0,8%)] backdrop-blur-md sm:w-[383.3px] md:p-2 lg:w-[391.3px]">
+    <nav className="fixed top-10 left-0 right-0 z-50 my-0  mx-auto  flex w-[306px] items-center justify-center gap-1 rounded-lg bg- [#e4ded7] px-1 py-1 text- [#050101] text-white bg-[hsl(0,0,8%)] backdrop-blur-md sm:w-[383.3px] md:p-2 lg:w-[391.3px] *:font-clash-display-semibold">
       <Link
         href="https://drive.google.com/file/d/1-bgnBDhIEA31mn00TGf8R4X2C65nQYv7/view"
         target="_blank"

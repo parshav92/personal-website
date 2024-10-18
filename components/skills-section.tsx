@@ -82,7 +82,7 @@ const SkillsSection: React.FC = () => {
   const rightGradient= 'after:absolute after:z-10 after:top-0 after:right-0 after:h-full after:w-1/4 after:bg-gradient-to-l after:from-[hsl(0,0%,8%)] after:to-transparent after:from-[25%]'
   return (
     <div className={`${leftGradient } ${rightGradient} w-full overflow-hidden py-36 relative space-y-12`}>
-      <h1 className="text-3xl font-bold text-center mb-6 text-white">My Skills</h1>
+      <h1 className="font-clash-display-semibold text-3xl font-bold text-center mb-6 text-white">My Skills</h1>
       <MarqueeRow skills={skills.slice(0, Math.ceil(skills.length / 2))} direction="normal" />
       <MarqueeRow skills={skills.slice(Math.ceil(skills.length / 2))} direction="reverse" />
     </div>

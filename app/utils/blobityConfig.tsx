@@ -11,7 +11,7 @@ export const initialBlobityOptions = {
     font: "'Montserrat','Source Sans Pro',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif",
     fontSize: 16,
     fontWeight: 500,
-    opacity: 0.7,
+    opacity: 0.8,
     fontColor: "#0e1016",
     zIndex: 100,
     size: 40,

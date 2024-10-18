@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-// import localFont from "next/font/local";
+import localFont from "next/font/local";
 import Navbar from "@/components/navbar";
 import "./globals.css";
-import { Sora } from 'next/font/google'
+// import { Sora } from 'next/font/google'
 
-const sora = Sora({
-  weight: ['400', '500', '700'], 
-  style: 'normal', 
-  subsets: ['latin'],
-})
+// const sora = Sora({
+//   weight: ['400', '500', '700'], 
+//   style: 'normal', 
+//   subsets: ['latin'],
+// })
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -21,6 +21,17 @@ const sora = Sora({
 //   weight: "100 900",
 // });
 
+const clashDisplay = localFont({
+  src: "./fonts/ClashDisplay-Regular.woff2",
+  variable: "--font-clash-display",
+  weight: "100 900",
+  });
+
+  const clashDisplaySemiBold = localFont({
+    src: "./fonts/ClashDisplay-Semibold.woff2",
+    variable: "--font-clash-display-semibold",
+    weight: "100 900",
+  });
 export const metadata: Metadata = {
   title: "pd portfolio",
   description: "a lil about myself",
@@ -34,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sora.className} antialiased scroll-smooth scrollbar-thin scrollbar-track-[#0E1016] scrollbar-thumb-[#212531] bg-[hsl(0,0%,8%)]`}
+        className={`${clashDisplay.variable} ${clashDisplaySemiBold.variable} font-clash-display antialiased scroll-smooth scrollbar-thin scrollbar-track-[#0E1016] scrollbar-thumb-[#212531] bg-[hsl(0,0%,8%)]`}
       >
         <Navbar />
         {children}

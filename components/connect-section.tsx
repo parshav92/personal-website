@@ -18,11 +18,11 @@ const ConnectSection = () => {
         <div className="flex flex-col items-center justify-center relative w-full sm:items-center lg:max-w-[1440px]">
           <AnimatedWords
             title="Connect &"
-            style="flex max-w-[500px] flex-col items-start text-left text-6xl font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center sm:text-7xl md:text-8xl lg:text-center lg:text-9xl"
+            style="font-clash-display-semibold flex max-w-[500px] flex-col items-start text-left text-6xl font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center sm:text-7xl md:text-8xl lg:text-center lg:text-9xl"
           />
           <AnimatedWords
             title="Create"
-            style="flex max-w-[500px] flex-col items-end text-right text-6xl font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center sm:text-7xl md:text-8xl lg:text-center lg:text-9xl mt-2 sm:mt-4"
+            style="font-clash-display-semibold flex max-w-[500px] flex-col items-end text-right text-6xl font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center sm:text-7xl md:text-8xl lg:text-center lg:text-9xl mt-2 sm:mt-4"
           />
         </div>
 
