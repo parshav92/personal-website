@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import AnimatedBody from '@/app/animations/animated-body';
 import AnimatedTitle from '@/app/animations/animated-title';
+import { trap } from '@/utils/font';
 
 const Hero: React.FC = () => {
   return (
@@ -24,13 +25,13 @@ const Hero: React.FC = () => {
 
           <AnimatedTitle
             text='PARSHAV'
-            className='font-clash-display-semibold text-white text-opacity-75 text-6xl md:text-9xl font-bold tracking-tigher line'
+            className={`${trap.variable} font-trap text-white text-opacity-75 text-6xl md:text-9xl font-bold tracking-tigher line`}
             wordSpace=''
             charSpace=''
           />
           <AnimatedTitle
             text='DEDHIA'
-            className='font-clash-display-semibold text-white text-opacity-75 text-6xl md:text-9xl font-bold tracking-tigher line'
+            className={`${trap.variable} font-trap text-white text-opacity-75 text-6xl md:text-9xl font-bold tracking-tigher line`}
             wordSpace=''
             charSpace=''
           />

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Navbar from "@/components/navbar";
 import "./globals.css";
+import Lenis from "@/components/lenis";
 // import { Sora } from 'next/font/google'
 
 // const sora = Sora({
@@ -44,12 +45,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Lenis>
       <body
         className={`${clashDisplay.variable} ${clashDisplaySemiBold.variable} font-clash-display antialiased scroll-smooth scrollbar-thin scrollbar-track-[#0E1016] scrollbar-thumb-[#212531] bg-[hsl(0,0%,8%)]`}
       >
         <Navbar />
         {children}
       </body>
+      </Lenis>
     </html>
   );
 }

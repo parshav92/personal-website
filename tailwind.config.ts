@@ -13,6 +13,7 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
+        trap: ["var(--font-trap)"],
         'clash-display': 'var(--font-clash-display)',
         'clash-display-semibold': 'var(--font-clash-display-semibold)',
       },
