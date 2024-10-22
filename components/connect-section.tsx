@@ -34,15 +34,12 @@ const ConnectSection = () => {
             />
             <div className="mt-5 flex items-center">
               <Link
-                href="mailto:dedhiaparshav@gmail.com?subject=Lets%20work%20together!&amp;body=Hello%2C%20I%20think%20we%20need%20you%20to%20work%20on%2Fcollaborate%20this%20particular%20product...%20Reach%20out%20as%20soon%20as%20you%20can."
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=dedhiaparshav@gmail.com&su=Lets%20work%20together!&body=Hello%2C%20I%20think%20we%20need%20you%20to%20work%20on%2Fcollaborate%20this%20particular%20product...%20Reach%20out%20as%20soon%20as%20you%20can."
                 target="_blank"
                 aria-label="Send me an email"
                 className="mt-1 w-full flex-1 underline underline-offset-2 hover:no-underline sm:mt-2 md:mt-3 lg:mt-4"
               >
-                <AnimatedBody
-                  text="Send me an email"
-                  className="w-full pr-0"
-                />
+                <AnimatedBody text="Send me an email" className="w-full pr-0" />
               </Link>
             </div>
           </div>
@@ -67,7 +64,7 @@ interface SocialLinkProps {
 
 const SocialLink: React.FC<SocialLinkProps> = ({ href, icon, label }) => (
   <Link href={href} target="_blank" aria-label={label}>
-      <FontAwesomeIcon icon={icon} className="w-8 h-8 sm:w-10 sm:h-10 md:w-8 md:h-8 lg:w-12 lg:h-12 text-gray-300 hover:text-purple-400 transition-colors duration-300" />
+    <FontAwesomeIcon icon={icon} className="w-8 h-8 sm:w-10 sm:h-10 md:w-8 md:h-8 lg:w-12 lg:h-12 text-gray-300 hover:text-purple-400 transition-colors duration-300" />
   </Link>
 );
 

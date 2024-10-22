@@ -10,6 +10,8 @@ const SongCard = ({ title, artist, image, link }: SongProps) => {
       >
         <Image
           src={image}
+          width={100}
+          height={100}
           alt={title}
           className="w-full items-stretch justify-center rounded-xl bg-cover bg-center"
         />
