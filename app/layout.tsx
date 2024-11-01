@@ -34,8 +34,9 @@ const clashDisplay = localFont({
     weight: "100 900",
   });
 export const metadata: Metadata = {
-  title: "pd portfolio",
+  title: "parshav portfolio",
   description: "a lil about myself",
+  keywords: "full-stack developer, blockchain developer, Next.js, Tailwind CSS, smart contracts, Web3, portfolio"
 };
 
 export default function RootLayout({
