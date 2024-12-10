@@ -5,8 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconDefinition, faGithub, faLinkedin, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import AnimatedBody from '../app/animations/animated-body';
 import AnimatedWords from '../app/animations/animated-words';
+import { useIsMobile } from '@/hooks/use-ismobile';
 
 const ConnectSection = () => {
+  const isMobile = useIsMobile();
   return (
     <motion.section
       className="relative z-10 flex h-screen w-full items-center justify-center overflow-hidden bg-cover bg-center py-16"
@@ -33,14 +35,24 @@ const ConnectSection = () => {
               className="-mb-1 inline-block overflow-hidden pt-1 sm:-mb-2 md:-mb-3 lg:-mb-4 font-medium"
             />
             <div className="mt-5 flex items-center">
-              <Link
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=dedhiaparshav@gmail.com&su=Lets%20work%20together!&body=Hello%2C%20I%20think%20we%20need%20you%20to%20work%20on%2Fcollaborate%20this%20particular%20product...%20Reach%20out%20as%20soon%20as%20you%20can."
-                target="_blank"
-                aria-label="Send me an email"
-                className="mt-1 w-full flex-1 underline underline-offset-2 hover:no-underline sm:mt-2 md:mt-3 lg:mt-4"
-              >
-                <AnimatedBody text="Send me an email" className="w-full pr-0" />
-              </Link>
+              {isMobile ? (
+                <Link
+                  href="mailto:dedhiaparshav@gmail.com?subject=Lets%20work%20together!&body=Hello%2C%20I%20think%20we%20need%20you%20to%20work%20on%2Fcollaborate%20this%20particular%20product...%20Reach%20out%20as%20soon%20as%20you%20can."
+                  aria-label="Send me an email"
+                  className="mt-1 w-full flex-1 underline underline-offset-2 hover:no-underline sm:mt-2 md:mt-3 lg:mt-4"
+                >
+                  <AnimatedBody text="Send me an email" className="w-full pr-0" />
+                </Link>
+              ) : (
+                <Link
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=dedhiaparshav@gmail.com&su=Lets%20work%20together!&body=Hello%2C%20I%20think%20we%20need%20you%20to%20work%20on%2Fcollaborate%20this%20particular%20product...%20Reach%20out%20as%20soon%20as%20you%20can."
+                  target="_blank"
+                  aria-label="Send me an email"
+                  className="mt-1 w-full flex-1 underline underline-offset-2 hover:no-underline sm:mt-2 md:mt-3 lg:mt-4"
+                >
+                  <AnimatedBody text="Send me an email" className="w-full pr-0" />
+                </Link>
+              )}
             </div>
           </div>
 
